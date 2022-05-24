@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <script src="https://kit.fontawesome.com/bc5fb07b3b.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link href="/static/app/theme/css/style.css" type="text/css" rel="stylesheet" />
+    
+   </head>
+   <body>
+      <header id="header"></header>
+      {% include 'app/main/header.html' %}
+      <section id="container">
+         <div id="page-header">
+            <h1 id="page-heading">PURCHASE ORDER </h1>
+         </div>
+         <div id="main-header">
+            <h1 id="main-heading">Welcome to : Chal Charkha</h1>
+         </div>
+         <div id="toolbar">
+           
+               <button type="button" class="btn btn-primary" onclick="myFunction()">Search</button>
+               <a href="/PurchaseOrder_Create" class="btn btn-primary"class="btn btn-primary">CREATE</a>
+               <a href="/purchaseOrder_Edit" class="btn btn-primary">Edit</a>
+               <a href="#" class="btn btn-primary">Delete</a>
+         </div>
+         </div>
+
+<div id="myDIV">
+    <div class="card mb-4" id="searchsupplierform2">
+        <div class="card-header">
+            Search Supplier
+        </div>
+        <div class="card-body">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="form-group">
+                      <label>PO No</label>
+                      <input type="text" class="form-control" id="exampleInputPONO1" aria-describedby="emailHelp"
+                          placeholder="Enter PO No">
+                      <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+              </div>
+              <div class="col-md-3">
+               <div class="form-group">
+                   <label>Supplier Code</label>
+                   <input type="text" class="form-control" id="exampleInputMobileNo1"
+                       aria-describedby="emailHelp" placeholder="Enter Supplier Code">
+                   <small id="emailHelp" class="form-text text-muted"></small>
+               </div>
+           </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>Supplier Name</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Supplier</option>
+                            <option value="1">Supplier-name1</option>
+                            <option value="2">Supplier-name2</option>
+                            <option value="3">Supplier-name3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                      <label>Item Code</label>
+                      <input type="text" class="form-control" id="exampleInputitemcode1"
+                          aria-describedby="emailHelp" placeholder="Enter Item Code">
+                      <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+              </div>
+              <div class="col-md-3">
+               <div class="form-group">
+                   <label>Item Name</label>
+                   <input type="text" class="form-control" id="exampleInputPONO1" aria-describedby="emailHelp"
+                       placeholder="Enter Item Name">
+                   <small id="emailHelp" class="form-text text-muted"></small>
+               </div>
+           </div>
+               
+            </div>
+            <div class="btn-group me-auto mt-4" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary" id="searchsupplierbutton2">SEARCH</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+         <div class="row-table">
+            <table class="table">
+               <thead>
+                  <tr >
+                     <td></td>
+                     <td >PR No</td>
+                     <td >PR Item</td>
+                     <td >PO Order</td>
+                     <td >PO LineItem</td>
+                     <td >PO Date</td>
+                     <td >Changed Date</td>
+                     <td >Changed Time</td>
+                     <td >Changed By</td>
+                     <td>PO Status</td>
+                     <td>PO Discription</td>
+                     <td>PO Location</td>
+                     <td>Delivery Date</td>
+                     <td>Supplier Code</td>
+                     <td>Mobile No</td>
+                     <td>Billing Address</td>
+                     <td>Billing Pincode</td>
+                     <td> Supply Place</td>
+                     <td>Item Code</td>
+                     <td>Item Name</td>
+                     <td>Item Size</td>
+                     <td>Item Color</td>
+                     <td>HSN/ SAC</td>
+                     <td>Unit Of Measure</td>
+                     <td>Quantity</td>
+                     <td>Base Price</td>
+                     <td>Discount</td>
+                     <td>GST</td>
+                     <td>GST %</td>
+                     <td>Total Amount</td>
+                     <td>Company-Title</td>
+                     <td>Name</td>
+                     <td>Street/House</td>
+                     <td>City</td>
+                     <td>Postal Code</td>
+                     <td>Country</td>
+                     <td>Invoice No</td>
+                     <td>Invoice LineItem</td>
+                     <td>Purchase Invoice</td>
+                     <td>Date</td>
+                     <td>Payment Term</td>
+                     <td>Remark</td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td> <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                     </td>
+                     <td>1</td>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <td>@mdo</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                  </tr>
+                  <tr>
+                     <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                     </td>
+                     <td background-color="#e9423e">2</td>
+                     <td>Jacob</td>
+                     <td>Thornton</td>
+                     <td>@fat</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                  </tr>
+                  <tr>
+                     <td> <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                     </td>
+                     <td>3</td>
+                     <td>Jacob</td>
+                     <td>Thornton</td>
+                     <td>@fat</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                     <td>xyz</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <nav aria-label="Page navigation example">
+            <ul class="pagination">
+               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+               <li class="page-item"><a class="page-link" href="#">1</a></li>
+               <li class="page-item"><a class="page-link active" href="#">2</a></li>
+               <li class="page-item"><a class="page-link" href="#">3</a></li>
+               <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+         </nav>
+      </section>
+      {% include 'app/main/footer.html' %}
+   </body>
+</html>

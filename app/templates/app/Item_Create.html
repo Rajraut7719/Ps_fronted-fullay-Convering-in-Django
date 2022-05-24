@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header id="header"></header>
+        {% include 'app/main/header.html' %}
+        <section id="container">
+            <div id="page-header">
+                <h1 id="page-heading"> CREATE ITEM</h1>
+            </div>
+            <div id="main-header">
+                <h1 id="main-heading">Welcome to : Chal Charkha</h1>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    Create Item Master
+                </div>
+                
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6" style="border-right:1px solid  #653D3E;">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Item No.</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label>Item Name</label>
+                                            <input type="text" class="form-control" id="exampleInputName"
+                                                aria-describedby="NameHelp" placeholder="Enter Item Name">
+                                            <small id="ItemHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Item Color</label>
+                                            <input type="text" class="form-control" id="exampleInputItemColor"
+                                                aria-describedby="colorHelp" placeholder="Enter Item Color">
+                                            <small id="colorHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Item Size</label>
+                                            <input type="text" class="form-control" id="exampleInputItemSize"
+                                                aria-describedby="SizeHelp" placeholder="Enter Item Size">
+                                            <small id="SizeHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Created Date</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Created By</label>
+                                            <input type="text" class="form-control" id="exampleInputItemColor"
+                                                aria-describedby="colorHelp" placeholder="Enter Created By">
+                                            <small id="colorHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label>Last Change Date </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>HSN Code</label>
+                                            <input type="text" class="form-control" id="exampleInputItemColor"
+                                                aria-describedby="colorHelp" placeholder="Enter HSN Code">
+                                            <small id="colorHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label>Item Description</label>
+                                            <input type="text" class="form-control" id="exampleInput"
+                                                aria-describedby="Help" placeholder="Enter Item Description">
+                                            <small id="Help" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Remark</label>
+                                            <input type="text" class="form-control" id="exampleInputremark1"
+                                                aria-describedby="emailHelp" placeholder="Enter Remark">
+                                            <small id="emailHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Category</label>
+                                            <select class="form-control">
+                                                <option value="0">Select</option>
+                                                <option value="1">Select Category</option>
+                                                <option value="2">Select Category</option>
+                                                <option value="3">Select Category</option>
+                                                <option value="4">Select Category</option>
+                                                <option value="5">Select Category</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>GST</label>
+                                            <select class="form-control">
+                                                <option value="0">10%</option>
+                                                <option value="1">20%</option>
+                                                <option value="2">25%</option>
+                                                <option value="3">30%</option>
+                                                <option value="4">35%</option>
+                                                <option value="5">40%</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>PCS</label>
+                                            <input type="text" class="form-control" id="exampleInput"
+                                                aria-describedby="emailHelp" placeholder="Enter PCS">
+                                            <small id="emailHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Upload Item images</label>
+                                        </div>
+                                    </div>
+                                 
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="file" id="myfile" name="myfile">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="file" id="myfile" name="myfile">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="file" id="myfile" name="myfile">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="file" id="myfile" name="myfile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <a href="#" class="btn btn-primary">Submit</a>
+        </section>
+        {% include 'app/main/footer.html' %}
+    </body>
+
+</html>

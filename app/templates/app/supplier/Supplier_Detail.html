@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="/static/app/theme/css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header id="header"></header>
+        {% include 'app/main/header.html' %}
+        <section id="container">
+            <div id="page-header">
+                <h1 id="page-heading"> SUPPLIER DETAILS</h1>
+            </div>
+            <div id="main-header">
+                <h1 id="main-heading">Welcome to : Chal Charkha</h1>
+            </div>
+            <nav>
+                <div class="nav nav-tab" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-About-tab" data-bs-toggle="tab" data-bs-target="#nav-About"
+                        type="button" role="tab" aria-controls="nav-About" aria-selected="true">About</button>
+
+                    <button class="nav-link " id="nav-Transaction-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-Transaction" type="button" role="tab" aria-controls="nav-Transaction"
+                        aria-selected="false">Purchase Order</button>
+                </div>
+            </nav>
+            <div class="card mt-4 tab-content" id="nav-tabcontent">
+                <div class="tab-pane fade show active p-3" id="nav-About" role="tabpanel"
+                    aria-labelledby="nav-About-tab">
+                    <div class="card-body ">
+                        <div class="col">
+                            <div class="form-group">
+
+                                <p> Supplier Code: <span>001</span></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p> Supplier Name : <span>Supplier name</span></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p> Email ID: <span>email@gmail.com</span></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p>Mobile No: <span>9878****59</span></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p> GSTIN NO. : <span>fd221544</span></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p> Place of Supply : <span>xyz*****d</span></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p> Billing Address : <span>house</span></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p> Billing Address : <span>house ********</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <div class="nav nav-tab" id="nav-tab" role="tablist">
+                            <button class="nav-link " id="nav-Edit-tab" data-bs-toggle="tab" data-bs-target="#nav-Edit"
+                                type="button" role="tab" aria-controls="nav-Edit" aria-selected="false">Edit</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="tab-pane fade p-3" id="nav-Transaction" role="tabpanel"
+                    aria-labelledby="nav-Transaction-tab">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            TRANSACTION DETAILS
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Transaction ID</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Account No</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">User</th>
+                                            <th scope="col">Date/Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade p-3" id="nav-Edit" role="tabpanel" aria-labelledby="nav-Edit-tab">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            EDIT SUPPLIER DETAILS
+                        </div>
+                   
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Supplier Code</label>
+                                        <input type="text" class="form-control" id="exampleInputsupplername1"
+                                            aria-describedby="emailHelp">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Supplier Name</label>
+                                        <input type="text" class="form-control" id="exampleInputsupplername1"
+                                            aria-describedby="emailHelp" placeholder="Enter Supplier Name">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Mobile No</label>
+                                        <input type="text" class="form-control" id="exampleInputMobileNo1"
+                                            aria-describedby="emailHelp" placeholder="Enter Mobile No">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>GSTIN</label>
+                                        <input type="email" class="form-control" id="exampleInputgstin1"
+                                            aria-describedby="emailHelp" placeholder="Enter GSTIN">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Place Of Supply</label>
+                                        <input type="email" class="form-control" id="exampleInputPlaceOfSupply1"
+                                            aria-describedby="emailHelp" placeholder="Enter Place Of Supply">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="Billing">Billing Address:</label><br />
+                                        <input type="text" class="form-control" id="Billing"
+                                            placeholder="Enter Billing Address" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Place-Supply">State</label><br />
+                                        <select class="form-control">
+                                            <option value="0">Select State</option>
+                                            <option value="1">State1</option>
+                                            <option value="2">State2</option>
+                                            <option value="3">State3</option>
+                                            <option value="4">State4</option>
+                                            <option value="5">State5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Place-Supply">City</label><br />
+                                        <select class="form-control">
+                                            <option value="0">Select City</option>
+                                            <option value="1">City1</option>
+                                            <option value="2">City2</option>
+                                            <option value="3">City3</option>
+                                            <option value="4">City4</option>
+                                            <option value="5">City5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label> Pincode</label>
+                                        <input type="text" class="form-control" id="exampleInputSupplierpincode1"
+                                            aria-describedby="emailHelp" placeholder="Enter Pincode" />
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Shipping Address</label><br>
+                                        <input type="checkbox" id="scales" name="scales" checked />Same
+                                        as Billing Address
+                                        <input type="text" class="form-control" id="Shipping"
+                                            placeholder="Enter Shipping Address" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Place-Supply">State</label><br />
+                                        <select class="form-control">
+                                            <option value="0">Select State</option>
+                                            <option value="1">State1</option>
+                                            <option value="2">State2</option>
+                                            <option value="3">State3</option>
+                                            <option value="4">State4</option>
+                                            <option value="5">State5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Place-Supply">City</label><br />
+                                        <select class="form-control">
+                                            <option value="0">Select City</option>
+                                            <option value="1">City1</option>
+                                            <option value="2">City2</option>
+                                            <option value="3">City3</option>
+                                            <option value="4">City4</option>
+                                            <option value="5">City5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label> Pincode</label>
+                                        <input type="text" class="form-control" id="exampleInputSupplierpincode1"
+                                            aria-describedby="emailHelp" placeholder="Enter Pincode" />
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label> Pincode</label>
+                                        <input type="text" class="form-control" id="exampleInputSupplierpincode1"
+                                            aria-describedby="emailHelp" placeholder="Enter Supplier Pincode">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>select Status </option>
+                                            <option value="1">order</option>
+                                            <option value="2">Released</option>
+                                            <option value="3">Closed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Remark</label>
+                                        <input type="text" class="form-control" id="exampleInputremark1"
+                                            aria-describedby="emailHelp" placeholder="Enter Remark">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+          
+            <a href="#" class="btn btn-primary">Submit</a>
+        </section>
+        <footer id="footer"></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src=/static/app"theme/js/app.js"></script>
+    </body>
+
+</html>
